@@ -1,0 +1,172 @@
+<html>
+  <head>
+    <style>
+        body{
+  background-color:#6a5acd;
+  font-weight:bolder;
+  font-size:20px;
+  text-transform:capitalize;
+}
+
+#title{
+  text-align:center;
+  color:white;
+  
+}
+#description{
+  text-align:center;
+  color:white;
+}
+#form{
+  background-color:#483d8b;
+  margin-left:300px;
+  margin-right:300px;
+  
+}
+#survey-form{
+  padding:20px;
+  color:white;
+}
+#name-label{
+  display:flex;
+  flex-direction:column;
+  padding:10px;
+ 
+}
+#email-label{
+  display:flex;
+  flex-direction:column;
+  padding:10px;
+}
+#number-label{
+  display:flex;
+  flex-direction:column;
+  padding:10px;
+
+}
+#position{
+  display:flex;
+  flex-direction:column;
+  padding:10px;
+
+}
+#radio{
+  display:flex;
+  flex-direction:column;
+  padding:10px;
+
+
+}
+#checkbox{
+  display:flex;
+  flex-direction:column;
+  padding:10px;
+}
+  
+#comments{
+  display:flex;
+  flex-direction:column;
+  padding:10px;
+  
+}
+#submit{
+  display:flex;
+  flex-direction:column;
+  padding:10px;
+  border-radius:4px;
+}
+input[type=text]{
+  width:90%;
+  height:30px;
+}
+input[type=email]{
+    width:90%;
+    height:30px;
+}
+input[type=number]{
+   width:90%;
+   height:30px;
+}
+textarea{
+    width:90%;
+    height:30px;
+}
+input[type=submit]{
+    width:91%;
+    height:40px;
+    background-color:green;
+    color:white;
+  font-size:20px;
+ 
+  
+}
+#dropdown{
+  width:91%;
+   height:30px;
+    
+  
+}
+textarea{
+  height:100px;
+  width:90%;
+}
+@media(max-width:600px){
+  
+  h1{
+    align-items:center;
+font-size:30px;
+  }
+  
+ #form{
+   margin:auto;
+  }
+  #position{
+    width:96%;
+    
+  }
+  #comments{
+    width:95%;
+    
+    
+  }
+  #submit{
+    width:96%;
+  }
+}
+
+    </style>
+    <title> surveyform</title>
+  </head>
+  <body>
+    <h1 id="title">surveyform</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+        
+    <div id="form"><form id="survey-form">
+      <div id="name-label"><label for="name"></label> <b>Name:</b>
+        <input type="text" id="name" name="name1" placeholder="enter the name" required></div>
+      <div id="email-label"><label for="email"></label><b>Email:</b>
+       <input type="email" id="email" name="email"placeholder="enter the email id" required></div>
+      <div id="number-label"><label for="number"></label> <b>Age:</b>
+      <input type="number" id="number" name="age"placeholder="enter the age" required min="1" max="100"></div>
+      <div id="position"> <label for="dropdown"></label> <b>Current Position:</b>
+      <select id="dropdown">
+        <option value="student"><b>student</b></option>
+        <option value="employees"><b>employees</b></option>
+        <option value="others"><b>others</b></option>
+       </select></div>
+      <div id="radio"><label for="radio1"></label><b>Gender:</b>
+        <div id="radio1"><input type="radio" name="name1" ><b>male</b></div>
+        <div id="radio2"><input type="radio" name="name1" ><b>female</b></div>
+      </div> 
+      <div id="checkbox"><b>Your skills?</b><div><input type="checkbox" name="checkbox"><b>c++</b></div><label for="checkboxes"></label>
+        <div><input type="checkbox" name="checkbox"><b>python</b></div>
+        <div><input type="checkbox" name="checkbox"> <b>java</b></div>
+        <div><input type="checkbox" name="checkbox"><b>front end developer</b></div>
+        <div><input type="checkbox" name="checkbox"><b>backend developer</b></div>
+        <div><input type="checkbox" name="checkbox"><b>others</b></div></div>
+  <div id="comments"><b>Comments:</b><textarea cols="30" rows="10">
+    </textarea></div>
+      <div id="submit"> <label for="submit"></label><input type="submit" name="submit" value="Submit"></div>
+  
+      </div>
+  </div>
