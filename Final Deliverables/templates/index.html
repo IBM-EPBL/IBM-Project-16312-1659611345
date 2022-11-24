@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+  <h1>Today's News</h1>
+  {% for news in cases.articles %}
+  <div class="news_box">
+    <div class="info_div">
+      <h3 class="title">{{news.title}}</h3>
+      <h6>Author: {{news.author}}</h6>
+      <h6>Published At: {{news.publishedAt}}</h6>
+      <h5>{{news.description}}</h5>
+    </div>
+    <div class="img_div">
+      <img src="{{news.urlToImage}}" alt="Image Not Found" height="270rem">
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock body %}
